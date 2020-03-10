@@ -1,2 +1,0 @@
-# koatjs
-JavaScript Framework 
