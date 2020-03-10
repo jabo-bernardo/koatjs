@@ -1,3 +1,7 @@
+let Koat = {
+    _version: "v0.1",
+}
+
 elements = document.querySelectorAll(".koat");
 inputTexts = {};
 inputs = [];
