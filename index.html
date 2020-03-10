@@ -5,15 +5,17 @@
     <body>
         <div class="container" >
             <p class="koat" data-foreach="groceryLists"></p>
-            <form>
-                <p>Your Email: </p><p class=koat data-output='email'></p>
-                <p>Your Password: </p><p class=koat data-output='password'></p>
-                <input class=koat data-input="email" />
-                <input class=koat data-input="password" type="password" />
-                <input type=submit />
-            </form>
+            <input class='list_info'/>
+            <button onclick="add_list()">Add to List</button>
         </div>
         <script src="js/KoatSources.js"></script>
         <script src="js/koat-v0.1.js"></script>
+        <script>
+            inp = document.querySelector('.list_info');
+            function add_list() {
+                Arrays['groceryLists'].push(inp.value);
+                inp.value = "";
+            }
+        </script>
     </body>
 </html>
